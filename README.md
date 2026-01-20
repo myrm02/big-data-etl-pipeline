@@ -43,9 +43,13 @@ Voici une présentation des fichiers pour leurs usage dans les tests qui suivron
 Dans le dossier *flow*, vous trouverez toutes les layer de la pipeline ETL.
 
 Voici un guide que vous pouvez suivre pour tester les différentes étapes de la pipeline par layer (classé par ordre de layering):
+
     - **bronze_ingestion.py** : Upload des fichiers sources *(files_generation)* dans un bucket *BUCKET_BRONZE*
+    
     - **silver_transform.py** : Traitement et nettoyage de la donnée pour garantir une qualité et une version des plus optimale des données d'entrainement d'analyse data à partir de la donnée accessible dans *BUCKET_BRONZE*
+    
     - **gold_analytics.py** : Présentation des résultats d'analyse réalisé à partir de la donnée mis au propre et mis à jour dans le layer silver *(BUCKET_SILVER)*
+   
 
 Pour tester les différentes étapes de la pipeline par layer, voici un guide que vous pouvez suivre pour vous aider avec des comandes en guise d'exemple (classé par ordre de layering):  
 
