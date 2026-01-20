@@ -27,11 +27,17 @@ Après avoir activé l'environnement virtuel, veuillez installer les dépendance
 Dans le dossier *files_generation*, vous trouverez tous les fichiers csv qui serviront de tests pour tester la pipeline ETL et ces différents acheminement afin d'évaluer les différents résultats provenant de chaque étape (bronze, silver et gold).
 
 Voici une présentation des fichiers pour leurs usage dans les tests qui suivront :
+
     - **generate_data.py** : Deux fichiers CSV basiques avec des données standard (tous les layers)
+    
     - **generate_data_new_items_test.py** : Un fichier CSV avec des ajouts de données additionnels au fichier *generate_data.py* pour évaluer la flexibilité d'ingestion de nouvelles données (layer bronze et silver)
+    
     - **generate_data_additional_random_test.py** : Deux fichiers CSV bonus pour tester la flexibilité de l'ingestion de nouvelle données si y a plusieurs fichiers principalement, séparation des données liés aux achats et aux clients du fichier initial *generate_data_new_items_test.py* (layer bronze et silver)
+    
     - **generate_data_null_missing_test.py** : Un fichiers CSV avec des valeurs manquantes pour le nettoyage et structuration des données (layer silver)
+    
     - **generate_data_quality_test.py** : Un fichiers CSV avec des données potentiellement pour les résultats d'analyse staistiques et additionnels finaux (layer gold)
+   
 
    ```bash
    python <nom_fichier>
