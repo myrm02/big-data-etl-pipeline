@@ -38,7 +38,7 @@ Voici une présentation des fichiers pour leurs usage dans les tests qui suivron
     
     - **generate_data_quality_test.py** : Un fichiers CSV avec des données potentiellement pour les résultats d'analyse staistiques et additionnels finaux (layer gold)
 
-4. Génération des fichiers :
+5. Génération des fichiers :
 
 Dans le dossier *flow*, vous trouverez toutes les layer de la pipeline ETL.
 
