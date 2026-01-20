@@ -37,11 +37,6 @@ Voici une présentation des fichiers pour leurs usage dans les tests qui suivron
     - **generate_data_null_missing_test.py** : Un fichiers CSV avec des valeurs manquantes pour le nettoyage et structuration des données (layer silver)
     
     - **generate_data_quality_test.py** : Un fichiers CSV avec des données potentiellement pour les résultats d'analyse staistiques et additionnels finaux (layer gold)
-   
-
-   ```bash
-   python <nom_fichier>
-   ```
 
 4. Génération des fichiers :
 
